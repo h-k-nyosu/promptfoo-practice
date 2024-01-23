@@ -1,0 +1,12 @@
+prompts: [prompts.txt]
+tests: vars.csv
+# 同じプロバイダを二つ比較するには、次のようにします：
+providers:
+  - customProvider.js:
+      id: custom-provider-hightemp
+      config:
+        temperature: 1.0
+  - customProvider.js:
+      id: custom-provider-lowtemp
+      config:
+        temperature: 0

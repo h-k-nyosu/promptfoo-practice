@@ -1,0 +1,9 @@
+# アサーションについての詳細は、https://promptfoo.dev/docs/configuration/expected-outputsを参照してください
+- type: icontains
+  value: hello
+- type: javascript
+  value: 1 / (output.length + 1)  # より短い出力を好む
+
+# モデルグレードの評価についての詳細は、https://promptfoo.dev/docs/configuration/expected-outputs/model-gradedを参照してください
+- type: model-graded-closedqa
+  value: 出力に挨拶が含まれていることを確認する

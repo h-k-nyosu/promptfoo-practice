@@ -1,0 +1,11 @@
+{{topic}}についての創造的な{{content_type}}のリストを生成してください。
+---
+あなたが{{topic}}の専門家であると想像してください。どの{{content_type}}を書くことをお勧めしますか？
+---
+[{
+  "role": "system",
+  "content": "{{system_message}}"
+}, {
+  "role": "user",
+  "content": "{{topic}}についての{{content_type}}を提案してください"
+}]

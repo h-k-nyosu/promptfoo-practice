@@ -1,0 +1,23 @@
+# このファイルには、テストケースのリストが含まれています。これらは、例のpromptfooconfig.yaml内のtests2.yamlと一緒に追加されます。
+
+- vars:
+    topic: 人工知能
+    content_type: ブログ投稿のアイデア
+  assert:
+    - type: javascript
+      value: output.length > 100
+- vars:
+    topic: 気候変動
+    content_type: 政策提案
+- vars:
+    topic: ベジタリアン料理
+    content_type: レシピのアイデア
+- vars:
+    topic: サイバーセキュリティ
+    content_type: 教育的なトピック
+- vars:
+    topic: リモートワーク
+    content_type: 課題
+- vars:
+    topic: 量子コンピューティング
+    content_type: 用途

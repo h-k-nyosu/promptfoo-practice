@@ -1,0 +1,35 @@
+prompts:
+  - file://prompt*.txt
+providers:
+  - openai:gpt-3.5-turbo
+
+# defaultTestの設定は、この設定内のすべてのテストケースに適用されます。
+defaultTest:
+  vars:
+    system_message: file://system_prompt.txt
+
+# これらのファイルパスに一致するすべてのテストケースをロード＆実行します
+tests:
+  # 正確なファイルパスを提供することができます
+  - tests/tests2.yaml
+
+  # またはグロブ（ワイルドカード）を使用することもできます
+  - tests/*
+
+  # 実際のテストケースと混在させることもできます
+  - vars:
+      topic: the internet
+      content_type: witty tweets
+
+  # file://接頭辞を使用して、変数としてファイル全体をロードすることもできます
+  - vars:
+      topic: file://vars/var_topic.yaml
+      content_type: file://vars/var_content_type.yaml
+
+  # アサーションをロードするためにもfile://接頭辞を使用することができます
+  - vars:
+      topic: fruit loops
+      content_type: Youtube intro
+    assert:
+      - type: javascript
+        value: file://asserts/assert.js

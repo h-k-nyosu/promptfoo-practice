@@ -1,0 +1,14 @@
+providers: [openai:gpt-3.5-turbo]
+prompts: [prompts/name_capitals_concise.txt, prompts/name_capitals_verbose.txt]
+tests:
+  - vars:
+      location: 東京
+
+    assert:
+      # 答えが提供された事実と一致していることを確認
+      - type: factuality
+        value: 日本の首都は東京です
+
+      # 答えが基準を満たしていることを確認
+      - type: model-graded-closedqa
+        value: 東京についての余分な情報や事実を含まない

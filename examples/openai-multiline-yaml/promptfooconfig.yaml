@@ -1,0 +1,11 @@
+# prettier-ignore
+prompts: [prompt.yaml]
+providers: ['openai:chat:gpt-3.5-turbo-0613']
+
+tests:
+  - vars:
+      content: こんにちは
+  - vars:
+      content: 何を手伝えますか？
+  - vars:
+      content: ハワイについて教えて

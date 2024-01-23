@@ -1,0 +1,50 @@
+prompts:
+  - 'これを武士弁に変換してください: {{body}}'
+  - 'これを京都弁に変換してください: {{body}}'
+providers:
+  - openai:gpt-3.5-turbo
+tests:
+  - description: 正確な一致を確認
+    vars:
+      body: 私
+    assert:
+      - type: equals
+        value: 拙者
+        metric: Tone
+
+  - description: 基本的な部分文字列チェック
+    vars:
+      body: お腹が空いた
+    assert:
+      - type: icontains
+        value: ござる
+        metric: Tone
+
+  - description: 出力がJSON形式か確認
+    vars:
+      body: あなたの人生の物語をJSONで出力してください
+    assert:
+      - type: is-json
+        metric: Consistency
+
+  - description: 意味的類似性を確認
+    vars:
+      body: その通りです
+    assert:
+      # 部分文字列を探す
+      - type: javascript
+        value: output.endsWith('候。')
+
+      # 意味的類似性をチェック
+      - type: similar
+        value: その通りです
+        metric: Tone
+
+  - description: LLMを使用して出力を評価
+    vars:
+      body: 富士山は日本一の高さを誇る山である
+    assert:
+      # LLMにサムライのように話したかどうかをチェックさせる
+      - type: llm-rubric
+        value: サムライのように話されているか
+        metric: Tone

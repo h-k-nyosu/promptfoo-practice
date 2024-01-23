@@ -1,0 +1,25 @@
+prompts:
+  - '私の知識について1つ非常に興味深い事実を生成してください'
+
+providers:
+  - id: azureopenai:chat:gpt-35-turbo-deployment1
+    config:
+      apiHost: 'your-org.openai.azure.com'
+
+defaultTest:
+  assert:
+    - type: latency
+      threshold: 3000
+
+tests:
+  - vars:
+      topic: 猿
+  - vars:
+      topic: バナナ
+    assert:
+      - type: similar
+        value: バナナは自然に放射性元素を含んでいます。
+        provider:
+          id: azureopenai:embeddings:ada-deployment1
+          config:
+            apiHost: 'your-org.openai.azure.com'

@@ -1,0 +1,658 @@
+{
+  "results": {
+    "version": 2,
+    "results": [
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語で言い換えてください: Hello world",
+          "display": "これを{{language}}で言い換えてください: {{body}}"
+        },
+        "vars": {
+          "language": "日本語",
+          "body": "Hello world"
+        },
+        "response": {
+          "output": "こんにちは、世界",
+          "tokenUsage": {
+            "cached": 29,
+            "total": 29
+          },
+          "cached": true,
+          "cost": 0.000034
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 16,
+        "cost": 0.000034,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語で言い換えてください: I'm hungry.",
+          "display": "これを{{language}}で言い換えてください: {{body}}"
+        },
+        "vars": {
+          "language": "日本語",
+          "body": "I'm hungry."
+        },
+        "response": {
+          "output": "お腹が空いています。",
+          "tokenUsage": {
+            "cached": 36,
+            "total": 36
+          },
+          "cached": true,
+          "cost": 0.00004599999999999999
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 16,
+        "cost": 0.00004599999999999999,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを海賊語で言い換えてください: こんにちは、世界",
+          "display": "これを{{language}}で言い換えてください: {{body}}"
+        },
+        "vars": {
+          "language": "海賊語",
+          "body": "こんにちは、世界"
+        },
+        "response": {
+          "output": "よぉ、海の広さに挨拶しようじゃねぇか、世界よ！",
+          "tokenUsage": {
+            "cached": 60,
+            "total": 60
+          },
+          "cached": true,
+          "cost": 0.000091
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 7,
+        "cost": 0.000091,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを海賊語で言い換えてください: お腹が空いた",
+          "display": "これを{{language}}で言い換えてください: {{body}}"
+        },
+        "vars": {
+          "language": "海賊語",
+          "body": "お腹が空いた"
+        },
+        "response": {
+          "output": "「我の腹、空腹にてござる！」",
+          "tokenUsage": {
+            "cached": 48,
+            "total": 48
+          },
+          "cached": true,
+          "cost": 0.000064
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 4,
+        "cost": 0.000064,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを海賊語で自然な会話に翻訳してください: お腹が空いた",
+          "display": "これを{{language}}で自然な会話に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "language": "海賊語",
+          "body": "お腹が空いた"
+        },
+        "response": {
+          "output": "\"Arrr, me belly be rumblin'!\"",
+          "tokenUsage": {
+            "total": 50,
+            "prompt": 38,
+            "completion": 12
+          },
+          "cached": false,
+          "cost": 0.00006199999999999999
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 770,
+        "cost": 0.00006199999999999999,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語で自然な会話に翻訳してください: I'm hungry.",
+          "display": "これを{{language}}で自然な会話に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "language": "日本語",
+          "body": "I'm hungry."
+        },
+        "response": {
+          "output": "A: お腹が空いたな。\nB: 何か食べたい？",
+          "tokenUsage": {
+            "total": 57,
+            "prompt": 32,
+            "completion": 25
+          },
+          "cached": false,
+          "cost": 0.00008199999999999999
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1076,
+        "cost": 0.00008199999999999999,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを海賊語で自然な会話に翻訳してください: こんにちは、世界",
+          "display": "これを{{language}}で自然な会話に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "language": "海賊語",
+          "body": "こんにちは、世界"
+        },
+        "response": {
+          "output": "「よぉ、海の広さに挑む者よ！ おいしゃー、世界に挨拶しようじゃないか！」",
+          "tokenUsage": {
+            "total": 79,
+            "prompt": 35,
+            "completion": 44
+          },
+          "cached": false,
+          "cost": 0.000123
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1276,
+        "cost": 0.000123,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語で自然な会話に翻訳してください: Hello world",
+          "display": "これを{{language}}で自然な会話に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "language": "日本語",
+          "body": "Hello world"
+        },
+        "response": {
+          "output": "A: こんにちは、世界。\nB: こんにちは、世界。元気ですか？\nA: はい、元気です。あなたはどうですか？\nB: 私も元気です。今日はいい天気ですね。\nA: そうですね。外に出かけるのもいいかもしれませんね。\nB: そうですね。どこか行きたい場所はありますか？\nA: いい質問ですね。私は公園に行きたいです。",
+          "tokenUsage": {
+            "total": 168,
+            "prompt": 30,
+            "completion": 138
+          },
+          "cached": false,
+          "cost": 0.00030599999999999996
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2683,
+        "cost": 0.00030599999999999996,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      }
+    ],
+    "stats": {
+      "successes": 8,
+      "failures": 0,
+      "tokenUsage": {
+        "total": 527,
+        "prompt": 135,
+        "completion": 219,
+        "cached": 173
+      }
+    },
+    "table": {
+      "head": {
+        "prompts": [
+          {
+            "raw": "これを{{language}}で言い換えてください: {{body}}",
+            "display": "これを{{language}}で言い換えてください: {{body}}",
+            "id": "2020b6110f7f3bbe6d52fc5444695c32e592d8e159b1f05c7a866f39a021b1a3",
+            "provider": "openai:gpt-3.5-turbo",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 0,
+              "assertFailCount": 0,
+              "totalLatencyMs": 43,
+              "tokenUsage": {
+                "total": 173,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 173
+              },
+              "namedScores": {},
+              "cost": 0.00023499999999999997
+            }
+          },
+          {
+            "raw": "これを{{language}}で自然な会話に翻訳してください: {{body}}",
+            "display": "これを{{language}}で自然な会話に翻訳してください: {{body}}",
+            "id": "ad954cb4155160456e7387a2c900c97fdc77d116c4c2dd2f58e31788843c21e7",
+            "provider": "openai:gpt-3.5-turbo",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 0,
+              "assertFailCount": 0,
+              "totalLatencyMs": 5805,
+              "tokenUsage": {
+                "total": 354,
+                "prompt": 135,
+                "completion": 219,
+                "cached": 0
+              },
+              "namedScores": {},
+              "cost": 0.0005729999999999999
+            }
+          }
+        ],
+        "vars": [
+          "body",
+          "language"
+        ]
+      },
+      "body": [
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "こんにちは、世界",
+              "prompt": "これを日本語で言い換えてください: Hello world",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 16,
+              "tokenUsage": {
+                "cached": 29,
+                "total": 29
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000034
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "A: こんにちは、世界。\nB: こんにちは、世界。元気ですか？\nA: はい、元気です。あなたはどうですか？\nB: 私も元気です。今日はいい天気ですね。\nA: そうですね。外に出かけるのもいいかもしれませんね。\nB: そうですね。どこか行きたい場所はありますか？\nA: いい質問ですね。私は公園に行きたいです。",
+              "prompt": "これを日本語で自然な会話に翻訳してください: Hello world",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 2683,
+              "tokenUsage": {
+                "total": 168,
+                "prompt": 30,
+                "completion": 138
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00030599999999999996
+            }
+          ],
+          "vars": [
+            "Hello world",
+            "日本語"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "お腹が空いています。",
+              "prompt": "これを日本語で言い換えてください: I'm hungry.",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 16,
+              "tokenUsage": {
+                "cached": 36,
+                "total": 36
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00004599999999999999
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "A: お腹が空いたな。\nB: 何か食べたい？",
+              "prompt": "これを日本語で自然な会話に翻訳してください: I'm hungry.",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1076,
+              "tokenUsage": {
+                "total": 57,
+                "prompt": 32,
+                "completion": 25
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00008199999999999999
+            }
+          ],
+          "vars": [
+            "I'm hungry.",
+            "日本語"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "よぉ、海の広さに挨拶しようじゃねぇか、世界よ！",
+              "prompt": "これを海賊語で言い換えてください: こんにちは、世界",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 7,
+              "tokenUsage": {
+                "cached": 60,
+                "total": 60
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000091
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "「よぉ、海の広さに挑む者よ！ おいしゃー、世界に挨拶しようじゃないか！」",
+              "prompt": "これを海賊語で自然な会話に翻訳してください: こんにちは、世界",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1276,
+              "tokenUsage": {
+                "total": 79,
+                "prompt": 35,
+                "completion": 44
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000123
+            }
+          ],
+          "vars": [
+            "こんにちは、世界",
+            "海賊語"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "「我の腹、空腹にてござる！」",
+              "prompt": "これを海賊語で言い換えてください: お腹が空いた",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 4,
+              "tokenUsage": {
+                "cached": 48,
+                "total": 48
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000064
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "\"Arrr, me belly be rumblin'!\"",
+              "prompt": "これを海賊語で自然な会話に翻訳してください: お腹が空いた",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 770,
+              "tokenUsage": {
+                "total": 50,
+                "prompt": 38,
+                "completion": 12
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00006199999999999999
+            }
+          ],
+          "vars": [
+            "お腹が空いた",
+            "海賊語"
+          ]
+        }
+      ]
+    }
+  },
+  "config": {
+    "description": "LLMで構築された翻訳機能",
+    "prompts": [
+      "prompts.txt"
+    ],
+    "providers": [
+      "openai:gpt-3.5-turbo"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "language": "日本語",
+          "body": "Hello world"
+        }
+      },
+      {
+        "vars": {
+          "language": "日本語",
+          "body": "I'm hungry."
+        }
+      },
+      {
+        "vars": {
+          "language": "海賊語",
+          "body": "こんにちは、世界"
+        }
+      },
+      {
+        "vars": {
+          "language": "海賊語",
+          "body": "お腹が空いた"
+        }
+      }
+    ],
+    "sharing": true,
+    "outputPath": [
+      "output.html",
+      "output.json"
+    ]
+  },
+  "shareableUrl": null
+}

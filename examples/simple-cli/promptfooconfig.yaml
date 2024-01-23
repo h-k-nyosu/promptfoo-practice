@@ -1,0 +1,18 @@
+description: 'シンプルなテスト'
+prompts:
+  - '{{language}}でこれを言い換えてください: {{body}}'
+  - '{{language}}でこれを会話形式に翻訳してください: {{body}}'
+providers: [openai:gpt-3.5-turbo]
+tests:
+  - vars:
+      language: フランス語
+      body: Hello, world
+  - vars:
+      language: フランス語
+      body: お腹が空いた
+  - vars:
+      language: 海賊語
+      body: Hello, world
+  - vars:
+      language: 海賊語
+      body: お腹が空いた

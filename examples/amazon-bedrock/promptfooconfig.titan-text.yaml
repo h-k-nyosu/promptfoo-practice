@@ -1,0 +1,19 @@
+prompts:
+  - 'この英語を{{language}}に変換してください: {{input}}'
+  - '{{language}}に翻訳してください: {{input}}'
+providers:
+  - id: bedrock:completion:amazon.titan-text-lite-v1
+    config:
+      region: 'us-west-2'
+      textGenerationConfig:
+        maxTokenCount: 400
+        temperature: 0.3
+        stopSequences: []
+        topP: 0.9
+tests:
+  - vars:
+      language: フランス語
+      input: こんにちは世界
+  - vars:
+      language: スペイン語
+      input: 図書館はどこですか？

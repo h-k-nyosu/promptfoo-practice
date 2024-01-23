@@ -1,0 +1,54 @@
+prompts: [prompts.txt]
+providers: [openai:gpt-3.5-turbo]
+tests:
+  - description: 完全一致を確認
+    vars:
+      body: はい
+    assert:
+      - type: equals
+        value: Yarr
+
+  - description: 別の基本的な部分文字列チェック
+    vars:
+      body: 私はお腹が空いています
+    assert:
+      - type: icontains
+        value: grub
+
+  - description: 出力がJSONであることを確認
+    vars:
+      body: JSONであなたの人生の物語を出力
+    assert:
+      - type: is-json
+
+  - description: 意味的類似性を確認
+    vars:
+      body: こんにちは、世界
+    assert:
+      # 部分文字列を探す
+      - type: javascript
+        value: output.startsWith('Ahoy')
+      - type: python
+        value: max(0, len(output) - 300)
+
+      # 意味的類似性を確認
+      - type: similar
+        value: Ahoy, world
+
+  - description: LLMを使用して出力を評価
+    vars:
+      body: The quick brown fox jumps over the lazy dog
+    assert:
+      # LLMに話し方が海賊のようであるかどうかを確認
+      - type: llm-rubric
+        value: Is spoken like a pirate
+
+      # $refは再利用可能なテンプレートを含めるための短縮形として使用できます
+      - $ref: '#/assertionTemplates/containsPirateNoise'
+
+outputPath: output.csv
+
+assertionTemplates:
+  containsPirateNoise:
+    type: icontains
+    value: arrr

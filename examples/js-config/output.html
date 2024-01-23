@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>LLMで構築された翻訳機能</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      t
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>body</th>
+        
+        <th>language</th>
+        
+        <th>これを{{language}}で言い換えてください: {{body}}</th>
+        
+        <th>これを{{language}}で自然な会話に翻訳してください: {{body}}</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Hello world">Hello world</td>
+          
+          <td data-content="日本語">日本語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+こんにちは、世界
+
+Reason: No assertions">[PASS] (1.00)
+
+こんにちは、世界
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+A: こんにちは、世界。
+B: こんにちは、世界。元気ですか？
+A: はい、元気です。あなたはどうですか？
+B: 私も元気です。今日はいい天気ですね。
+A: そうですね。外に出かけるのもいいかもしれませんね。
+B: そうですね。どこか行きたい場所はありますか？
+A: いい質問ですね。私は公園に行きたいです。
+
+Reason: No assertions">[PASS] (1.00)
+
+A: こんにちは、世界。
+B: こんにちは、世界。元気ですか？
+A: はい、元気です。あなたはどうですか？
+B: 私も元気です。今日はいい天気ですね。
+A: そうですね。外に出かけるのもいいかもしれませんね。
+B: そうですね。どこか行きたい場所はありますか？
+A: いい質問ですね。私は公園に行きたいです。
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="I&#39;m hungry.">I'm hungry.</td>
+          
+          <td data-content="日本語">日本語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+お腹が空いています。
+
+Reason: No assertions">[PASS] (1.00)
+
+お腹が空いています。
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+A: お腹が空いたな。
+B: 何か食べたい？
+
+Reason: No assertions">[PASS] (1.00)
+
+A: お腹が空いたな。
+B: 何か食べたい？
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="こんにちは、世界">こんにちは、世界</td>
+          
+          <td data-content="海賊語">海賊語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+よぉ、海の広さに挨拶しようじゃねぇか、世界よ！
+
+Reason: No assertions">[PASS] (1.00)
+
+よぉ、海の広さに挨拶しようじゃねぇか、世界よ！
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+「よぉ、海の広さに挑む者よ！ おいしゃー、世界に挨拶しようじゃないか！」
+
+Reason: No assertions">[PASS] (1.00)
+
+「よぉ、海の広さに挑む者よ！ おいしゃー、世界に挨拶しようじゃないか！」
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="お腹が空いた">お腹が空いた</td>
+          
+          <td data-content="海賊語">海賊語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+「我の腹、空腹にてござる！」
+
+Reason: No assertions">[PASS] (1.00)
+
+「我の腹、空腹にてござる！」
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+&quot;Arrr, me belly be rumblin&#39;!&quot;
+
+Reason: No assertions">[PASS] (1.00)
+
+"Arrr, me belly be rumblin'!"
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

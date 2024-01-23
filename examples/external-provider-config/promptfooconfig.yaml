@@ -1,0 +1,12 @@
+prompts: '{{city}}の天気について教えてください。'
+providers:
+  - file://./gpt-3.5.yaml
+tests:
+  - vars:
+      city: 東京
+  - vars:
+      city: 大阪
+  - vars:
+      city: 札幌
+  - vars:
+      city: 福岡

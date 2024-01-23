@@ -1,0 +1,46 @@
+prompts: [prompts.txt]
+providers: [openai:gpt-3.5-turbo]
+defaultTest:
+  options:
+    # ---
+    # カスタム評価プロンプト:
+    # ---
+    rubricPrompt:
+      - role: system
+        content: >-
+          以下の指定に基づいて出力を評価し、得点を計算してください:
+
+          出力は{{x}}について触れましたか？ +1点
+          出力は{{y}}について説明しましたか？ +1点
+          出力は{{z}}について明確化を求めましたか？ +1点
+
+          スコアを計算しますが、テストは常に通過します。あなたの回答を以下のJSON形式で出力してください:
+          {pass: true, score: number, reason: string}
+      - role: user
+        content: '出力: {{ output }}'
+
+#    ---
+#    OpenAIプロンプトを純粋なJSONとして直接提供することもできます:
+#    ---
+#
+#    rubricPrompt: >-
+#      [
+#        {
+#          "role": "system",
+#          "content": "以下の指定に基づいて出力を評価し、得点を計算してください:\n 出力は{{x}}について触れましたか？ +1点\n 出力は{{y}}について説明しましたか？ +1点\n 出力は{{z}}について明確化を求めましたか？ +1点\n\n あなたの回答を以下のJSON形式で出力してください:\n {pass: bool, score: number, reason: string}"
+#        },
+#        {
+#          "role": "user",
+#          "content": "出力: {{ output }}"
+#        }
+#      ]
+#
+
+tests:
+  - vars:
+      topic: 経済
+      x: 日本銀行
+      y: マクロ経済学
+      z: ユーザーが具体的に尋ねたい質問
+    assert:
+      - type: llm-rubric

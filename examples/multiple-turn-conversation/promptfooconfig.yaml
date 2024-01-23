@@ -1,0 +1,16 @@
+prompts: [prompt.json]
+providers: [openai:gpt-3.5-turbo]
+
+# すべてのテストに対するシステムメッセージを設定します
+defaultTest:
+  vars:
+    system_message: You are a helpful assistant
+
+# 複数のターンを持つ会話をテストします
+tests:
+  - vars:
+      question: フェイスブックの創設者は誰ですか？
+  - vars:
+      question: 彼はどこに住んでいますか？
+  - vars:
+      question: それはどの州にありますか？

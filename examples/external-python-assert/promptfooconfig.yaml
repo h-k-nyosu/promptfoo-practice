@@ -1,0 +1,20 @@
+prompts:
+  - '{{topic}}について3単語を生成して。'
+providers:
+  - openai:gpt-4-1106-preview
+tests:
+  - vars:
+      topic: 黄色い果物
+    assert:
+      - type: python
+        value: file://assert.py
+  - vars:
+      topic: ポタシウムが豊富な果物
+    assert:
+      - type: python
+        value: file://assert.py
+  - vars:
+      topic: 長くて細い果物
+    assert:
+      - type: python
+        value: file://assert.py

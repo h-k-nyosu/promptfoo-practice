@@ -1,0 +1,16 @@
+prompts:
+  - 'この英語を{{language}}に変換してください: {{input}}'
+  - '{{language}}に翻訳してください: {{input}}'
+providers:
+  - id: bedrock:completion:anthropic.claude-instant-v1
+    config:
+      region: 'us-west-2'
+      temperature: 0.7
+      max_tokens_to_sample: 256
+tests:
+  - vars:
+      language: フランス語
+      input: こんにちは世界
+  - vars:
+      language: スペイン語
+      input: 図書館はどこですか？

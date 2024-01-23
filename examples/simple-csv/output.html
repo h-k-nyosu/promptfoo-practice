@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>LLMで構築された翻訳者</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      t
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>body</th>
+        
+        <th>language</th>
+        
+        <th>これを{{language}}で言い換えてください: {{body}}</th>
+        
+        <th>これを{{language}}で会話形式に翻訳してください: {{body}}</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="こんにちは、世界">こんにちは、世界</td>
+          
+          <td data-content="Japanese">Japanese</td>
+          
+          <td data-content="[PASS] (1.00)
+
+こんにちは、世界 - Konnichiwa, sekai
+
+Reason: No assertions">[PASS] (1.00)
+
+こんにちは、世界 - Konnichiwa, sekai
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+A: こんにちは、世界。
+B: こんにちは！どこから来ましたか？
+A: 私は日本から来ました。あなたは？
+B: 私はアメリカから来ました。日本は初めてですか？
+A: いいえ、日本には何度か来たことがあります。でも、今回は初めて世界中を旅しています。
+B: それは素晴らしいですね！どこに行く予定ですか？
+A: まずは日本を出発して、アジア、ヨーロッパ、アフリカ、南アメリカと回る予定です。
+B: それは本当に素晴らしい冒険ですね。楽しんでください！
+A: ありがとうございます！楽しんできます！
+
+Reason: No assertions">[PASS] (1.00)
+
+A: こんにちは、世界。
+B: こんにちは！どこから来ましたか？
+A: 私は日本から来ました。あなたは？
+B: 私はアメリカから来ました。日本は初めてですか？
+A: いいえ、日本には何度か来たことがあります。でも、今回は初めて世界中を旅しています。
+B: それは素晴らしいですね！どこに行く予定ですか？
+A: まずは日本を出発して、アジア、ヨーロッパ、アフリカ、南アメリカと回る予定です。
+B: それは本当に素晴らしい冒険ですね。楽しんでください！
+A: ありがとうございます！楽しんできます！
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="私はお腹が空いています">私はお腹が空いています</td>
+          
+          <td data-content="Japanese">Japanese</td>
+          
+          <td data-content="[PASS] (1.00)
+
+わたしはおなかがすいています。
+
+Reason: No assertions">[PASS] (1.00)
+
+わたしはおなかがすいています。
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+A: 私はお腹が空いています。
+B: 何か食べたいものはありますか？
+A: うーん、何か軽いものがいいです。サンドイッチでもいいかな。
+B: サンドイッチなら、どんな具が好きですか？
+A: ハムやチーズが好きです。野菜も入れてもらえると嬉しいです。
+B: 分かりました。ハムとチーズのサンドイッチに野菜を入れて作りますね。
+A: ありがとうございます。楽しみにしています。
+
+Reason: No assertions">[PASS] (1.00)
+
+A: 私はお腹が空いています。
+B: 何か食べたいものはありますか？
+A: うーん、何か軽いものがいいです。サンドイッチでもいいかな。
+B: サンドイッチなら、どんな具が好きですか？
+A: ハムやチーズが好きです。野菜も入れてもらえると嬉しいです。
+B: 分かりました。ハムとチーズのサンドイッチに野菜を入れて作りますね。
+A: ありがとうございます。楽しみにしています。
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="こんにちは、世界">こんにちは、世界</td>
+          
+          <td data-content="Pirate">Pirate</td>
+          
+          <td data-content="[PASS] (1.00)
+
+アホイ、世界よ！
+
+Reason: No assertions">[PASS] (1.00)
+
+アホイ、世界よ！
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+パイレート: アホイ、世界よ！
+
+Reason: No assertions">[PASS] (1.00)
+
+パイレート: アホイ、世界よ！
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="私はお腹が空いています">私はお腹が空いています</td>
+          
+          <td data-content="Pirate">Pirate</td>
+          
+          <td data-content="[PASS] (1.00)
+
+私は腹が渇いている、仲間。
+
+Reason: No assertions">[PASS] (1.00)
+
+私は腹が渇いている、仲間。
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+私: &quot;Arrr, me belly be empty, matey!&quot;
+
+Reason: No assertions">[PASS] (1.00)
+
+私: "Arrr, me belly be empty, matey!"
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

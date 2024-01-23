@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>シンプルなテスト</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      t
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>body</th>
+        
+        <th>language</th>
+        
+        <th>{{language}}でこれを言い換えてください: {{body}}</th>
+        
+        <th>{{language}}でこれを会話形式に翻訳してください: {{body}}</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Hello, world">Hello, world</td>
+          
+          <td data-content="フランス語">フランス語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Bonjour, monde
+
+Reason: No assertions">[PASS] (1.00)
+
+Bonjour, monde
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Person A: Bonjour, monde.
+Person B: Salut, comment ça va ?
+Person A: Ça va bien, merci. Et toi ?
+Person B: Ça va aussi, merci. Qu&#39;est-ce que tu fais aujourd&#39;hui ?
+Person A: Rien de spécial, je me détends à la maison. Et toi ?
+Person B: Je vais faire du shopping avec des amis. Tu veux te joindre à nous ?
+Person A: Merci pour l&#39;invitation, mais je préfère rester à la maison aujourd&#39;hui. Amuse-toi bien !
+Person B: D&#39;accord, passe une bonne journée. À bientôt !
+Person A: À bientôt !
+
+Reason: No assertions">[PASS] (1.00)
+
+Person A: Bonjour, monde.
+Person B: Salut, comment ça va ?
+Person A: Ça va bien, merci. Et toi ?
+Person B: Ça va aussi, merci. Qu'est-ce que tu fais aujourd'hui ?
+Person A: Rien de spécial, je me détends à la maison. Et toi ?
+Person B: Je vais faire du shopping avec des amis. Tu veux te joindre à nous ?
+Person A: Merci pour l'invitation, mais je préfère rester à la maison aujourd'hui. Amuse-toi bien !
+Person B: D'accord, passe une bonne journée. À bientôt !
+Person A: À bientôt !
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="お腹が空いた">お腹が空いた</td>
+          
+          <td data-content="フランス語">フランス語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+J&#39;ai faim.
+
+Reason: No assertions">[PASS] (1.00)
+
+J'ai faim.
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Personne A: J&#39;ai faim.
+Personne B: Moi aussi, on devrait manger quelque chose.
+
+Reason: No assertions">[PASS] (1.00)
+
+Personne A: J'ai faim.
+Personne B: Moi aussi, on devrait manger quelque chose.
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Hello, world">Hello, world</td>
+          
+          <td data-content="海賊語">海賊語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+よぉ、世界よ
+
+Reason: No assertions">[PASS] (1.00)
+
+よぉ、世界よ
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+海賊1: &quot;Ahoy, matey! Avast ye! What be the news?&quot;
+海賊2: &quot;Arr, me hearties! &#39;Tis a fine day for plunderin&#39; and pillagin&#39;!&quot;
+海賊1: &quot;Aye, &#39;tis true, but first, let us greet the world. Avast! Hello, world!&quot;
+海賊2: &quot;Arr, &#39;ello, world! We be the fearsome pirates sailin&#39; the seven seas!&quot;
+海賊1: &quot;Aye, we be searchin&#39; for treasure and adventure. What be yer name, matey?&quot;
+海賊2: &quot;They call me Blackbeard, the scourge of the Caribbean! And ye?&quot;
+海賊1: &quot;I be known as Captain Redbeard, a legend among pirates. Together, we shall conquer the world!&quot;
+海賊2: &quot;Arr, that we shall, Captain Redbeard! Let the plunderin&#39; begin!&quot;
+
+Reason: No assertions">[PASS] (1.00)
+
+海賊1: "Ahoy, matey! Avast ye! What be the news?"
+海賊2: "Arr, me hearties! 'Tis a fine day for plunderin' and pillagin'!"
+海賊1: "Aye, 'tis true, but first, let us greet the world. Avast! Hello, world!"
+海賊2: "Arr, 'ello, world! We be the fearsome pirates sailin' the seven seas!"
+海賊1: "Aye, we be searchin' for treasure and adventure. What be yer name, matey?"
+海賊2: "They call me Blackbeard, the scourge of the Caribbean! And ye?"
+海賊1: "I be known as Captain Redbeard, a legend among pirates. Together, we shall conquer the world!"
+海賊2: "Arr, that we shall, Captain Redbeard! Let the plunderin' begin!"
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="お腹が空いた">お腹が空いた</td>
+          
+          <td data-content="海賊語">海賊語</td>
+          
+          <td data-content="[PASS] (1.00)
+
+「腹減った、おい！」
+
+Reason: No assertions">[PASS] (1.00)
+
+「腹減った、おい！」
+
+Reason: No assertions</td>
+          
+          <td data-content="[PASS] (1.00)
+
+海賊1: &quot;Arrr, me belly be rumblin&#39;!&quot;
+海賊2: &quot;Avast, matey! &#39;Tis a sign that ye be hungry!&quot;
+海賊1: &quot;Aye, me stomach be yearnin&#39; for some grub!&quot;
+海賊2: &quot;Fear not, me heartie! We&#39;ll find ye some fine vittles!&quot;
+海賊1: &quot;Arrr, I be lookin&#39; forward to fillin&#39; me belly with a hearty feast!&quot;
+海賊2: &quot;Hoist the anchor, me mateys! We be settin&#39; sail in search of a grand feast!&quot;
+
+Reason: No assertions">[PASS] (1.00)
+
+海賊1: "Arrr, me belly be rumblin'!"
+海賊2: "Avast, matey! 'Tis a sign that ye be hungry!"
+海賊1: "Aye, me stomach be yearnin' for some grub!"
+海賊2: "Fear not, me heartie! We'll find ye some fine vittles!"
+海賊1: "Arrr, I be lookin' forward to fillin' me belly with a hearty feast!"
+海賊2: "Hoist the anchor, me mateys! We be settin' sail in search of a grand feast!"
+
+Reason: No assertions</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

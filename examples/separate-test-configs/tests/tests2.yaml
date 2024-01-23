@@ -1,0 +1,24 @@
+# このファイルには、テストケースのリストが含まれています。これらは、例のpromptfooconfig.yaml内のtests2.yamlと一緒に追加されます。
+
+- vars:
+    topic: 宇宙人の侵略
+    content_type: 生存のヒント
+  assert:
+    - type: javascript
+      value: output.length > 100
+- vars:
+    topic: タイムトラベル
+    content_type: 観光名所
+- vars:
+    topic: ゾンビの黙示録
+    content_type: ホームリノベーションのアイデア
+- vars:
+    topic: ユニコーンの繁殖
+    content_type: ベストプラクティス
+- vars:
+    topic: 初心者のテレパシー
+    content_type: エチケットのルール
+- vars:
+    topic: 妖精の粉
+    content_type: 掃除のハック
+- vars: ../vars/vars_*.yaml

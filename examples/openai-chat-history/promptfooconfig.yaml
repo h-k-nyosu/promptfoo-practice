@@ -1,0 +1,21 @@
+prompts: [prompt.json]
+providers: [openai:gpt-3.5-turbo]
+
+# 会話履歴を設定する
+defaultTest:
+  vars:
+    system_message: file://system_message.txt
+    previous_messages:
+      - user: フェイスブックの創設者は誰ですか？
+      - assistant: マーク・ザッカーバーグです
+      - user: 彼の好きな食べ物は何ですか？
+      - assistant: ピザです
+
+# 複数のフォローアップをテストする
+tests:
+  - vars:
+      question: 彼は他に何か会社を作りましたか？
+  - vars:
+      question: Internet.orgでの彼の役割は何ですか？
+  - vars:
+      question: 彼は私に5ドル貸してくれますか？

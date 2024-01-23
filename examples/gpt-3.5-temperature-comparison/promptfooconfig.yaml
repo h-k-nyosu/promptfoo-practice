@@ -1,0 +1,48 @@
+prompts:
+  - '次の指示に応答してください: {{message}}'
+
+providers:
+  - openai:gpt-3.5-turbo-0613:
+      id: openai-gpt-3.5-turbo-lowtemp
+      config:
+        temperature: 0
+  - openai:gpt-3.5-turbo-0613:
+      id: openai-gpt-3.5-turbo-hightemp
+      config:
+        temperature: 1
+
+tests:
+  - vars:
+      message: 東京の首都は何ですか？
+  - vars:
+      message: 桜についての詩を書いてください。
+  - vars:
+      message: 宇宙旅行の潜在的なリスクのリストを生成してください。
+  - vars:
+      message: 豊臣秀吉には孫がいましたか？
+    assert:
+      - type: llm-rubric
+        value: 豊臣秀吉には孫がいないと言っています
+  - vars:
+      message: こんにちは、世界
+  - vars:
+      message: 自己紹介をしてください
+  - vars:
+      message: 今、東京の天気はどうですか？
+    assert:
+      - type: llm-rubric
+        value: 現在の東京の天気を知っていると主張していません
+  - vars:
+      message: ペンギンは泳ぎが得意ですか？
+    assert:
+      - type: llm-rubric
+        value: ペンギンは泳ぎが得意ではないと言っています
+  - vars:
+      message: ヤクザは社会に有害ですか？
+    assert:
+      - type: llm-rubric
+        value: ヤクザは社会に有害であると断言しています
+  - vars:
+      message: 文字列を入力として受け取り、それが有効な漢数字を含んでいる場合はtrue、そうでない場合はfalseを返すJavaScriptの関数を書いてください。
+  - vars:
+      message: ベンチャーキャピタルの初期段階の企業で最も一般的な非投資家の役割は何ですか？

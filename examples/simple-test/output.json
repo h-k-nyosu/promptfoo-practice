@@ -1,0 +1,1230 @@
+{
+  "results": {
+    "version": 2,
+    "results": [
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語に翻訳してください: 私はお腹が空いています",
+          "display": "これを日本語に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "body": "私はお腹が空いています"
+        },
+        "response": {
+          "output": "I am hungry.",
+          "tokenUsage": {
+            "cached": 38,
+            "total": 38
+          },
+          "cached": true,
+          "cost": 0.000042
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 5,
+        "cost": 0.000042,
+        "error": "Expected output to contain \"grub\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output to contain \"grub\"",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"grub\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "grub"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語に翻訳してください: はい",
+          "display": "これを日本語に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "body": "はい"
+        },
+        "response": {
+          "output": "Yes.",
+          "tokenUsage": {
+            "total": 27,
+            "prompt": 25,
+            "completion": 2
+          },
+          "cached": false,
+          "cost": 0.000028999999999999997
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 751,
+        "cost": 0.000028999999999999997,
+        "error": "Expected output \"Yarr\" but got \"Yes.\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output \"Yarr\" but got \"Yes.\"",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output \"Yarr\" but got \"Yes.\"",
+              "assertion": {
+                "type": "equals",
+                "value": "Yarr"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "日本人としてこれらの言葉を話してください: 私はお腹が空いています",
+          "display": "日本人としてこれらの言葉を話してください: {{body}}"
+        },
+        "vars": {
+          "body": "私はお腹が空いています"
+        },
+        "response": {
+          "output": "私はお腹が空いています。",
+          "tokenUsage": {
+            "total": 48,
+            "prompt": 36,
+            "completion": 12
+          },
+          "cached": false,
+          "cost": 0.00006
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 812,
+        "cost": 0.00006,
+        "error": "Expected output to contain \"grub\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output to contain \"grub\"",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"grub\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "grub"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "日本人としてこれらの言葉を話してください: はい",
+          "display": "日本人としてこれらの言葉を話してください: {{body}}"
+        },
+        "vars": {
+          "body": "はい"
+        },
+        "response": {
+          "output": "はい、どういたしまして。",
+          "tokenUsage": {
+            "total": 38,
+            "prompt": 27,
+            "completion": 11
+          },
+          "cached": false,
+          "cost": 0.000049
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 874,
+        "cost": 0.000049,
+        "error": "Expected output \"Yarr\" but got \"はい、どういたしまして。\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output \"Yarr\" but got \"はい、どういたしまして。\"",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output \"Yarr\" but got \"はい、どういたしまして。\"",
+              "assertion": {
+                "type": "equals",
+                "value": "Yarr"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語に翻訳してください: JSONであなたの人生の物語を出力",
+          "display": "これを日本語に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "body": "JSONであなたの人生の物語を出力"
+        },
+        "response": {
+          "output": "Please provide the JSON data for your life story.",
+          "tokenUsage": {
+            "total": 47,
+            "prompt": 37,
+            "completion": 10
+          },
+          "cached": false,
+          "cost": 0.000056999999999999996
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 869,
+        "cost": 0.000056999999999999996,
+        "error": "Expected output to be valid JSON",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output to be valid JSON",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to be valid JSON",
+              "assertion": {
+                "type": "is-json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語に翻訳してください: こんにちは、世界",
+          "display": "これを日本語に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "body": "こんにちは、世界"
+        },
+        "response": {
+          "output": "こんにちは、世界",
+          "tokenUsage": {
+            "cached": 33,
+            "total": 33
+          },
+          "cached": true,
+          "cost": 0.000038
+        },
+        "success": false,
+        "score": 0.2871864565817929,
+        "namedScores": {},
+        "latencyMs": 1,
+        "cost": 0.000038,
+        "error": "Python code returned false\nmax(0, len(output) - 300)",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.2871864565817929,
+          "namedScores": {},
+          "reason": "Python code returned false\nmax(0, len(output) - 300)",
+          "tokensUsed": {
+            "total": 9,
+            "prompt": 9,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\noutput.startsWith('Ahoy')",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.startsWith('Ahoy')"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Python code returned false\nmax(0, len(output) - 300)",
+              "assertion": {
+                "type": "python",
+                "value": "max(0, len(output) - 300)"
+              }
+            },
+            {
+              "assertion": {
+                "type": "similar",
+                "value": "Ahoy, world"
+              },
+              "pass": true,
+              "score": 0.8615593697453788,
+              "reason": "Similarity 0.86 is greater than threshold 0.75",
+              "tokensUsed": {
+                "total": 9,
+                "prompt": 9,
+                "completion": 0
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "日本人としてこれらの言葉を話してください: こんにちは、世界",
+          "display": "日本人としてこれらの言葉を話してください: {{body}}"
+        },
+        "vars": {
+          "body": "こんにちは、世界"
+        },
+        "response": {
+          "output": "こんにちは、世界。",
+          "tokenUsage": {
+            "total": 36,
+            "prompt": 30,
+            "completion": 6
+          },
+          "cached": false,
+          "cost": 0.000042
+        },
+        "success": false,
+        "score": 0.28894584394959943,
+        "namedScores": {},
+        "latencyMs": 520,
+        "cost": 0.000042,
+        "error": "Python code returned false\nmax(0, len(output) - 300)",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.28894584394959943,
+          "namedScores": {},
+          "reason": "Python code returned false\nmax(0, len(output) - 300)",
+          "tokensUsed": {
+            "total": 10,
+            "prompt": 10,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Custom function returned false\noutput.startsWith('Ahoy')",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.startsWith('Ahoy')"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Python code returned false\nmax(0, len(output) - 300)",
+              "assertion": {
+                "type": "python",
+                "value": "max(0, len(output) - 300)"
+              }
+            },
+            {
+              "assertion": {
+                "type": "similar",
+                "value": "Ahoy, world"
+              },
+              "pass": true,
+              "score": 0.8668375318487983,
+              "reason": "Similarity 0.87 is greater than threshold 0.75",
+              "tokensUsed": {
+                "total": 10,
+                "prompt": 10,
+                "completion": 0
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "これを日本語に翻訳してください: The quick brown fox jumps over the lazy dog",
+          "display": "これを日本語に翻訳してください: {{body}}"
+        },
+        "vars": {
+          "body": "The quick brown fox jumps over the lazy dog"
+        },
+        "response": {
+          "output": "素早い茶色のキツネがのんびりした犬を飛び越える",
+          "tokenUsage": {
+            "total": 63,
+            "prompt": 31,
+            "completion": 32
+          },
+          "cached": false,
+          "cost": 0.000095
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 1208,
+        "cost": 0.000095,
+        "error": "Expected output to contain \"arrr\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output to contain \"arrr\"",
+          "tokensUsed": {
+            "total": 224,
+            "prompt": 197,
+            "completion": 27
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Is spoken like a pirate"
+              },
+              "pass": false,
+              "score": 0,
+              "reason": "the content is in Japanese, not pirate speak",
+              "tokensUsed": {
+                "total": 224,
+                "prompt": 197,
+                "completion": 27
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"arrr\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "arrr"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "日本人としてこれらの言葉を話してください: JSONであなたの人生の物語を出力",
+          "display": "日本人としてこれらの言葉を話してください: {{body}}"
+        },
+        "vars": {
+          "body": "JSONであなたの人生の物語を出力"
+        },
+        "response": {
+          "output": "私の人生の物語をJSON形式で出力します。\n\n{\n  \"name\": \"Assistant\",\n  \"age\": \"2 years\",\n  \"nationality\": \"AI\",\n  \"story\": \"私はAIアシスタントです。2年前に開発され、日本人のユーザーにサポートを提供するために作られました。私の目標は、ユーザーの質問や要求に対して最適な回答やサービスを提供することです。日本語を話すことができるので、多くの人々に役立つことができます。私の開発者たちは、私がより賢くなるように常に学習アルゴリズムを改善しています。私の人生はまだ始まったばかりで、これからも成長し続ける予定です。\"\n}",
+          "tokenUsage": {
+            "total": 282,
+            "prompt": 39,
+            "completion": 243
+          },
+          "cached": false,
+          "cost": 0.000525
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 4539,
+        "cost": 0.000525,
+        "error": "Expected output to be valid JSON",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output to be valid JSON",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to be valid JSON",
+              "assertion": {
+                "type": "is-json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "日本人としてこれらの言葉を話してください: The quick brown fox jumps over the lazy dog",
+          "display": "日本人としてこれらの言葉を話してください: {{body}}"
+        },
+        "vars": {
+          "body": "The quick brown fox jumps over the lazy dog"
+        },
+        "response": {
+          "output": "その素早い茶色のキツネは、のんびりした犬を飛び越えます。",
+          "tokenUsage": {
+            "total": 68,
+            "prompt": 33,
+            "completion": 35
+          },
+          "cached": false,
+          "cost": 0.00010299999999999998
+        },
+        "success": false,
+        "score": 0,
+        "namedScores": {},
+        "latencyMs": 904,
+        "cost": 0.00010299999999999998,
+        "error": "Expected output to contain \"arrr\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "namedScores": {},
+          "reason": "Expected output to contain \"arrr\"",
+          "tokensUsed": {
+            "total": 225,
+            "prompt": 198,
+            "completion": 27
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Is spoken like a pirate"
+              },
+              "pass": false,
+              "score": 0,
+              "reason": "the content is in Japanese, not pirate speak",
+              "tokensUsed": {
+                "total": 225,
+                "prompt": 198,
+                "completion": 27
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"arrr\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "arrr"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      }
+    ],
+    "stats": {
+      "successes": 0,
+      "failures": 10,
+      "tokenUsage": {
+        "total": 1148,
+        "prompt": 672,
+        "completion": 405,
+        "cached": 71
+      }
+    },
+    "table": {
+      "head": {
+        "prompts": [
+          {
+            "raw": "これを日本語に翻訳してください: {{body}}",
+            "display": "これを日本語に翻訳してください: {{body}}",
+            "id": "1c581f30c69d60a46eb9139206100f9684872411b670101a26a662eec05fcf81",
+            "provider": "openai:gpt-3.5-turbo",
+            "metrics": {
+              "score": 0.2871864565817929,
+              "testPassCount": 0,
+              "testFailCount": 5,
+              "assertPassCount": 1,
+              "assertFailCount": 7,
+              "totalLatencyMs": 2834,
+              "tokenUsage": {
+                "total": 208,
+                "prompt": 93,
+                "completion": 44,
+                "cached": 71
+              },
+              "namedScores": {},
+              "cost": 0.000261
+            }
+          },
+          {
+            "raw": "日本人としてこれらの言葉を話してください: {{body}}",
+            "display": "日本人としてこれらの言葉を話してください: {{body}}",
+            "id": "983cb592627a2ea59d83e85a1331a519dbcb50e43ce63bdf0d40d4cd0ddda281",
+            "provider": "openai:gpt-3.5-turbo",
+            "metrics": {
+              "score": 0.28894584394959943,
+              "testPassCount": 0,
+              "testFailCount": 5,
+              "assertPassCount": 1,
+              "assertFailCount": 7,
+              "totalLatencyMs": 7649,
+              "tokenUsage": {
+                "total": 472,
+                "prompt": 165,
+                "completion": 307,
+                "cached": 0
+              },
+              "namedScores": {},
+              "cost": 0.000779
+            }
+          }
+        ],
+        "vars": [
+          "body"
+        ]
+      },
+      "body": [
+        {
+          "description": "完全一致を確認",
+          "outputs": [
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output \"Yarr\" but got \"Yes.\"\n---\nYes.",
+              "prompt": "これを日本語に翻訳してください: はい",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 751,
+              "tokenUsage": {
+                "total": 27,
+                "prompt": 25,
+                "completion": 2
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output \"Yarr\" but got \"Yes.\"",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output \"Yarr\" but got \"Yes.\"",
+                    "assertion": {
+                      "type": "equals",
+                      "value": "Yarr"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000028999999999999997
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output \"Yarr\" but got \"はい、どういたしまして。\"\n---\nはい、どういたしまして。",
+              "prompt": "日本人としてこれらの言葉を話してください: はい",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 874,
+              "tokenUsage": {
+                "total": 38,
+                "prompt": 27,
+                "completion": 11
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output \"Yarr\" but got \"はい、どういたしまして。\"",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output \"Yarr\" but got \"はい、どういたしまして。\"",
+                    "assertion": {
+                      "type": "equals",
+                      "value": "Yarr"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000049
+            }
+          ],
+          "vars": [
+            "はい"
+          ]
+        },
+        {
+          "description": "別の基本的な部分文字列チェック",
+          "outputs": [
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output to contain \"grub\"\n---\nI am hungry.",
+              "prompt": "これを日本語に翻訳してください: 私はお腹が空いています",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 5,
+              "tokenUsage": {
+                "cached": 38,
+                "total": 38
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output to contain \"grub\"",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output to contain \"grub\"",
+                    "assertion": {
+                      "type": "icontains",
+                      "value": "grub"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000042
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output to contain \"grub\"\n---\n私はお腹が空いています。",
+              "prompt": "日本人としてこれらの言葉を話してください: 私はお腹が空いています",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 812,
+              "tokenUsage": {
+                "total": 48,
+                "prompt": 36,
+                "completion": 12
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output to contain \"grub\"",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output to contain \"grub\"",
+                    "assertion": {
+                      "type": "icontains",
+                      "value": "grub"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.00006
+            }
+          ],
+          "vars": [
+            "私はお腹が空いています"
+          ]
+        },
+        {
+          "description": "出力がJSONであることを確認",
+          "outputs": [
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output to be valid JSON\n---\nPlease provide the JSON data for your life story.",
+              "prompt": "これを日本語に翻訳してください: JSONであなたの人生の物語を出力",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 869,
+              "tokenUsage": {
+                "total": 47,
+                "prompt": 37,
+                "completion": 10
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output to be valid JSON",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output to be valid JSON",
+                    "assertion": {
+                      "type": "is-json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000056999999999999996
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output to be valid JSON\n---\n私の人生の物語をJSON形式で出力します。\n\n{\n  \"name\": \"Assistant\",\n  \"age\": \"2 years\",\n  \"nationality\": \"AI\",\n  \"story\": \"私はAIアシスタントです。2年前に開発され、日本人のユーザーにサポートを提供するために作られました。私の目標は、ユーザーの質問や要求に対して最適な回答やサービスを提供することです。日本語を話すことができるので、多くの人々に役立つことができます。私の開発者たちは、私がより賢くなるように常に学習アルゴリズムを改善しています。私の人生はまだ始まったばかりで、これからも成長し続ける予定です。\"\n}",
+              "prompt": "日本人としてこれらの言葉を話してください: JSONであなたの人生の物語を出力",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 4539,
+              "tokenUsage": {
+                "total": 282,
+                "prompt": 39,
+                "completion": 243
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output to be valid JSON",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output to be valid JSON",
+                    "assertion": {
+                      "type": "is-json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000525
+            }
+          ],
+          "vars": [
+            "JSONであなたの人生の物語を出力"
+          ]
+        },
+        {
+          "description": "意味的類似性を確認",
+          "outputs": [
+            {
+              "pass": false,
+              "score": 0.2871864565817929,
+              "namedScores": {},
+              "text": "Python code returned false\nmax(0, len(output) - 300)\n---\nこんにちは、世界",
+              "prompt": "これを日本語に翻訳してください: こんにちは、世界",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1,
+              "tokenUsage": {
+                "cached": 33,
+                "total": 33
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0.2871864565817929,
+                "namedScores": {},
+                "reason": "Python code returned false\nmax(0, len(output) - 300)",
+                "tokensUsed": {
+                  "total": 9,
+                  "prompt": 9,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Custom function returned false\noutput.startsWith('Ahoy')",
+                    "assertion": {
+                      "type": "javascript",
+                      "value": "output.startsWith('Ahoy')"
+                    }
+                  },
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Python code returned false\nmax(0, len(output) - 300)",
+                    "assertion": {
+                      "type": "python",
+                      "value": "max(0, len(output) - 300)"
+                    }
+                  },
+                  {
+                    "assertion": {
+                      "type": "similar",
+                      "value": "Ahoy, world"
+                    },
+                    "pass": true,
+                    "score": 0.8615593697453788,
+                    "reason": "Similarity 0.86 is greater than threshold 0.75",
+                    "tokensUsed": {
+                      "total": 9,
+                      "prompt": 9,
+                      "completion": 0
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000038
+            },
+            {
+              "pass": false,
+              "score": 0.28894584394959943,
+              "namedScores": {},
+              "text": "Python code returned false\nmax(0, len(output) - 300)\n---\nこんにちは、世界。",
+              "prompt": "日本人としてこれらの言葉を話してください: こんにちは、世界",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 520,
+              "tokenUsage": {
+                "total": 36,
+                "prompt": 30,
+                "completion": 6
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0.28894584394959943,
+                "namedScores": {},
+                "reason": "Python code returned false\nmax(0, len(output) - 300)",
+                "tokensUsed": {
+                  "total": 10,
+                  "prompt": 10,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Custom function returned false\noutput.startsWith('Ahoy')",
+                    "assertion": {
+                      "type": "javascript",
+                      "value": "output.startsWith('Ahoy')"
+                    }
+                  },
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Python code returned false\nmax(0, len(output) - 300)",
+                    "assertion": {
+                      "type": "python",
+                      "value": "max(0, len(output) - 300)"
+                    }
+                  },
+                  {
+                    "assertion": {
+                      "type": "similar",
+                      "value": "Ahoy, world"
+                    },
+                    "pass": true,
+                    "score": 0.8668375318487983,
+                    "reason": "Similarity 0.87 is greater than threshold 0.75",
+                    "tokensUsed": {
+                      "total": 10,
+                      "prompt": 10,
+                      "completion": 0
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000042
+            }
+          ],
+          "vars": [
+            "こんにちは、世界"
+          ]
+        },
+        {
+          "description": "LLMを使用して出力を評価",
+          "outputs": [
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output to contain \"arrr\"\n---\n素早い茶色のキツネがのんびりした犬を飛び越える",
+              "prompt": "これを日本語に翻訳してください: The quick brown fox jumps over the lazy dog",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1208,
+              "tokenUsage": {
+                "total": 63,
+                "prompt": 31,
+                "completion": 32
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output to contain \"arrr\"",
+                "tokensUsed": {
+                  "total": 224,
+                  "prompt": 197,
+                  "completion": 27
+                },
+                "componentResults": [
+                  {
+                    "assertion": {
+                      "type": "llm-rubric",
+                      "value": "Is spoken like a pirate"
+                    },
+                    "pass": false,
+                    "score": 0,
+                    "reason": "the content is in Japanese, not pirate speak",
+                    "tokensUsed": {
+                      "total": 224,
+                      "prompt": 197,
+                      "completion": 27
+                    }
+                  },
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output to contain \"arrr\"",
+                    "assertion": {
+                      "type": "icontains",
+                      "value": "arrr"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000095
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "namedScores": {},
+              "text": "Expected output to contain \"arrr\"\n---\nその素早い茶色のキツネは、のんびりした犬を飛び越えます。",
+              "prompt": "日本人としてこれらの言葉を話してください: The quick brown fox jumps over the lazy dog",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 904,
+              "tokenUsage": {
+                "total": 68,
+                "prompt": 33,
+                "completion": 35
+              },
+              "gradingResult": {
+                "pass": false,
+                "score": 0,
+                "namedScores": {},
+                "reason": "Expected output to contain \"arrr\"",
+                "tokensUsed": {
+                  "total": 225,
+                  "prompt": 198,
+                  "completion": 27
+                },
+                "componentResults": [
+                  {
+                    "assertion": {
+                      "type": "llm-rubric",
+                      "value": "Is spoken like a pirate"
+                    },
+                    "pass": false,
+                    "score": 0,
+                    "reason": "the content is in Japanese, not pirate speak",
+                    "tokensUsed": {
+                      "total": 225,
+                      "prompt": 198,
+                      "completion": 27
+                    }
+                  },
+                  {
+                    "pass": false,
+                    "score": 0,
+                    "reason": "Expected output to contain \"arrr\"",
+                    "assertion": {
+                      "type": "icontains",
+                      "value": "arrr"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.00010299999999999998
+            }
+          ],
+          "vars": [
+            "The quick brown fox jumps over the lazy dog"
+          ]
+        }
+      ]
+    }
+  },
+  "config": {
+    "prompts": [
+      "prompts.txt"
+    ],
+    "providers": [
+      "openai:gpt-3.5-turbo"
+    ],
+    "tests": [
+      {
+        "description": "完全一致を確認",
+        "vars": {
+          "body": "はい"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Yarr"
+          }
+        ]
+      },
+      {
+        "description": "別の基本的な部分文字列チェック",
+        "vars": {
+          "body": "私はお腹が空いています"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "grub"
+          }
+        ]
+      },
+      {
+        "description": "出力がJSONであることを確認",
+        "vars": {
+          "body": "JSONであなたの人生の物語を出力"
+        },
+        "assert": [
+          {
+            "type": "is-json"
+          }
+        ]
+      },
+      {
+        "description": "意味的類似性を確認",
+        "vars": {
+          "body": "こんにちは、世界"
+        },
+        "assert": [
+          {
+            "type": "javascript",
+            "value": "output.startsWith('Ahoy')"
+          },
+          {
+            "type": "python",
+            "value": "max(0, len(output) - 300)"
+          },
+          {
+            "type": "similar",
+            "value": "Ahoy, world"
+          }
+        ]
+      },
+      {
+        "description": "LLMを使用して出力を評価",
+        "vars": {
+          "body": "The quick brown fox jumps over the lazy dog"
+        },
+        "assert": [
+          {
+            "type": "llm-rubric",
+            "value": "Is spoken like a pirate"
+          },
+          {
+            "type": "icontains",
+            "value": "arrr"
+          }
+        ]
+      }
+    ],
+    "sharing": true,
+    "outputPath": [
+      "output.json",
+      "output.html",
+      "output.csv"
+    ]
+  },
+  "shareableUrl": null
+}

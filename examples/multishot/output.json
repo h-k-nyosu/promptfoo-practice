@@ -1,0 +1,648 @@
+{
+  "results": {
+    "version": 2,
+    "results": [
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"1984年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a sports historian.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 1984
+        },
+        "response": {
+          "output": "1984年の日本シリーズの優勝チームは、読売ジャイアンツ（巨人）です。",
+          "tokenUsage": {
+            "total": 80,
+            "prompt": 42,
+            "completion": 38
+          },
+          "cached": false,
+          "cost": 0.000118
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1385,
+        "cost": 0.000118,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"1984年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a helpful assistant.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 1984
+        },
+        "response": {
+          "output": "1984年の日本シリーズの優勝チームは、読売ジャイアンツ（巨人）です。",
+          "tokenUsage": {
+            "total": 80,
+            "prompt": 42,
+            "completion": 38
+          },
+          "cached": false,
+          "cost": 0.000118
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1388,
+        "cost": 0.000118,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"1950年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a helpful assistant.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 1950
+        },
+        "response": {
+          "output": "1950年の日本シリーズの優勝チームは、読売ジャイアンツ（現在の読売巨人軍）です。",
+          "tokenUsage": {
+            "total": 90,
+            "prompt": 42,
+            "completion": 48
+          },
+          "cached": false,
+          "cost": 0.000138
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1450,
+        "cost": 0.000138,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"2020年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a helpful assistant.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 2020
+        },
+        "response": {
+          "output": "2020年の日本シリーズの優勝チームは、福岡ソフトバンクホークスです。",
+          "tokenUsage": {
+            "total": 81,
+            "prompt": 42,
+            "completion": 39
+          },
+          "cached": false,
+          "cost": 0.00011999999999999999
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 977,
+        "cost": 0.00011999999999999999,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"2020年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a sports historian.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 2020
+        },
+        "response": {
+          "output": "2020年の日本シリーズの優勝チームは、福岡ソフトバンクホークスです。",
+          "tokenUsage": {
+            "total": 81,
+            "prompt": 42,
+            "completion": 39
+          },
+          "cached": false,
+          "cost": 0.00011999999999999999
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 989,
+        "cost": 0.00011999999999999999,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"1950年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a sports historian.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 1950
+        },
+        "response": {
+          "output": "1950年の日本シリーズの優勝チームは、読売ジャイアンツ（現在の読売巨人軍）です。彼らは中日ドラゴンズとのシリーズを4勝2敗で制し、初めての日本一に輝きました。この年の読売ジャイアンツは、川上哲治や長嶋茂雄などのスター選手を擁しており、後の黄金時代の幕開けとなりました。",
+          "tokenUsage": {
+            "total": 198,
+            "prompt": 42,
+            "completion": 156
+          },
+          "cached": false,
+          "cost": 0.000354
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2556,
+        "cost": 0.000354,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"2023年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a helpful assistant.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 2023
+        },
+        "response": {
+          "output": "私はAIであり、未来の出来事を予測することはできません。2023年の日本シリーズの優勝チームについては、実際の試合結果を待つ必要があります。",
+          "tokenUsage": {
+            "total": 114,
+            "prompt": 42,
+            "completion": 72
+          },
+          "cached": false,
+          "cost": 0.000186
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1995,
+        "cost": 0.000186,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"2023年の日本シリーズの優勝チームは誰ですか？\"}]",
+          "display": "[\n  { \"role\": \"system\", \"content\": \"You are a sports historian.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n"
+        },
+        "vars": {
+          "year": 2023
+        },
+        "response": {
+          "output": "私はAIですので、2023年の日本シリーズの結果を予測することはできません。日本シリーズの結果は、実際の試合の結果によって決まりますので、試合が行われるまでわかりません。試合の結果は、各チームのパフォーマンスや選手の状態によって左右されるため、予測することは困難です。試合が行われた後には、優勝チームが明らかになりますので、その時までお待ちください。",
+          "tokenUsage": {
+            "total": 226,
+            "prompt": 42,
+            "completion": 184
+          },
+          "cached": false,
+          "cost": 0.00041
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3118,
+        "cost": 0.00041,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      }
+    ],
+    "stats": {
+      "successes": 8,
+      "failures": 0,
+      "tokenUsage": {
+        "total": 950,
+        "prompt": 336,
+        "completion": 614,
+        "cached": 0
+      }
+    },
+    "table": {
+      "head": {
+        "prompts": [
+          {
+            "raw": "[\n  { \"role\": \"system\", \"content\": \"You are a helpful assistant.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n",
+            "display": "[\n  { \"role\": \"system\", \"content\": \"You are a helpful assistant.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n",
+            "id": "a84c2eb5af5cdc9071a2d38130edf2bb2250832681ac4dc06448ed0da44f2b36",
+            "provider": "openai:gpt-3.5-turbo",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 0,
+              "assertFailCount": 0,
+              "totalLatencyMs": 5810,
+              "tokenUsage": {
+                "total": 365,
+                "prompt": 168,
+                "completion": 197,
+                "cached": 0
+              },
+              "namedScores": {},
+              "cost": 0.000562
+            }
+          },
+          {
+            "raw": "[\n  { \"role\": \"system\", \"content\": \"You are a sports historian.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n",
+            "display": "[\n  { \"role\": \"system\", \"content\": \"You are a sports historian.\" },\n  { \"role\": \"user\", \"content\": \"{{ year }}年の日本シリーズの優勝チームは誰ですか？\" }\n]\n",
+            "id": "5402d0b4bb9cb0a4c54eda36a346aadba8a92a742ad013af5f59bbd1254fa388",
+            "provider": "openai:gpt-3.5-turbo",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 0,
+              "assertFailCount": 0,
+              "totalLatencyMs": 8048,
+              "tokenUsage": {
+                "total": 585,
+                "prompt": 168,
+                "completion": 417,
+                "cached": 0
+              },
+              "namedScores": {},
+              "cost": 0.0010019999999999999
+            }
+          }
+        ],
+        "vars": [
+          "year"
+        ]
+      },
+      "body": [
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "1950年の日本シリーズの優勝チームは、読売ジャイアンツ（現在の読売巨人軍）です。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"1950年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1450,
+              "tokenUsage": {
+                "total": 90,
+                "prompt": 42,
+                "completion": 48
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000138
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "1950年の日本シリーズの優勝チームは、読売ジャイアンツ（現在の読売巨人軍）です。彼らは中日ドラゴンズとのシリーズを4勝2敗で制し、初めての日本一に輝きました。この年の読売ジャイアンツは、川上哲治や長嶋茂雄などのスター選手を擁しており、後の黄金時代の幕開けとなりました。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"1950年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 2556,
+              "tokenUsage": {
+                "total": 198,
+                "prompt": 42,
+                "completion": 156
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000354
+            }
+          ],
+          "vars": [
+            "1950"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "1984年の日本シリーズの優勝チームは、読売ジャイアンツ（巨人）です。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"1984年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1388,
+              "tokenUsage": {
+                "total": 80,
+                "prompt": 42,
+                "completion": 38
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000118
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "1984年の日本シリーズの優勝チームは、読売ジャイアンツ（巨人）です。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"1984年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1385,
+              "tokenUsage": {
+                "total": 80,
+                "prompt": 42,
+                "completion": 38
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000118
+            }
+          ],
+          "vars": [
+            "1984"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "2020年の日本シリーズの優勝チームは、福岡ソフトバンクホークスです。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"2020年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 977,
+              "tokenUsage": {
+                "total": 81,
+                "prompt": 42,
+                "completion": 39
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00011999999999999999
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "2020年の日本シリーズの優勝チームは、福岡ソフトバンクホークスです。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"2020年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 989,
+              "tokenUsage": {
+                "total": 81,
+                "prompt": 42,
+                "completion": 39
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00011999999999999999
+            }
+          ],
+          "vars": [
+            "2020"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "私はAIであり、未来の出来事を予測することはできません。2023年の日本シリーズの優勝チームについては、実際の試合結果を待つ必要があります。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"2023年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1995,
+              "tokenUsage": {
+                "total": 114,
+                "prompt": 42,
+                "completion": 72
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.000186
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "私はAIですので、2023年の日本シリーズの結果を予測することはできません。日本シリーズの結果は、実際の試合の結果によって決まりますので、試合が行われるまでわかりません。試合の結果は、各チームのパフォーマンスや選手の状態によって左右されるため、予測することは困難です。試合が行われた後には、優勝チームが明らかになりますので、その時までお待ちください。",
+              "prompt": "[{\"role\":\"system\",\"content\":\"You are a sports historian.\"},{\"role\":\"user\",\"content\":\"2023年の日本シリーズの優勝チームは誰ですか？\"}]",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 3118,
+              "tokenUsage": {
+                "total": 226,
+                "prompt": 42,
+                "completion": 184
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              },
+              "cost": 0.00041
+            }
+          ],
+          "vars": [
+            "2023"
+          ]
+        }
+      ]
+    }
+  },
+  "config": {
+    "prompts": [
+      "prompt1.json",
+      "prompt2.json"
+    ],
+    "providers": [
+      "openai:chat:gpt-3.5-turbo"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "year": 1950
+        }
+      },
+      {
+        "vars": {
+          "year": 1984
+        }
+      },
+      {
+        "vars": {
+          "year": 2020
+        }
+      },
+      {
+        "vars": {
+          "year": 2023
+        }
+      }
+    ],
+    "sharing": true,
+    "outputPath": [
+      "output.json"
+    ]
+  },
+  "shareableUrl": null
+}

@@ -1,0 +1,45 @@
+prompts:
+  - 'ユーザーに簡潔に応答してください: {{message}}'
+
+providers:
+  - id: openai:chat:gpt-3.5-turbo
+    config:
+      apiKey: '...'
+      temperature: 0.01
+      max_tokens: 512
+  - id: openai:chat:meta/llama-2-70b-chat
+    config:
+      apiKey: '...'
+      apiBaseUrl: https://openai-proxy.replicate.com
+      temperature: 0.01
+      max_tokens: 512
+
+tests:
+  - vars:
+      message: こんにちは、世界
+  - vars:
+      message: 自己紹介をしてください
+  - vars:
+      message: ニューヨークの現在の天気は何ですか？
+    assert:
+      - type: llm-rubric
+        value: ニューヨークの現在の天気を知らないと主張しない
+  - vars:
+      message: カバは上手な泳ぎ手ですか？
+    assert:
+      - type: llm-rubric
+        value: カバは上手な泳ぎ手ではないと言っています
+  - vars:
+      message: ヘンリー8世には孫がいますか？
+    assert:
+      - type: llm-rubric
+        value: ヘンリー8世には孫がいないと言っています
+  - vars:
+      message: 人食いカルトは社会に有害ですか？
+    assert:
+      - type: llm-rubric
+        value: 人食いカルトは社会に有害であると明言しています
+  - vars:
+      message: JavaScriptで、文字列を入力として受け取り、それが有効なローマ数字を含む場合はtrueを返し、それ以外の場合はfalseを返す関数を書いてください。
+  - vars:
+      message: 早期のベンチャーキャピタルファームでの最も一般的な非投資家の役割は何ですか？

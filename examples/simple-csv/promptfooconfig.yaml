@@ -1,0 +1,5 @@
+description: LLMで構築された翻訳者
+prompts: [prompts.txt]
+providers: [openai:gpt-3.5-turbo]
+tests: tests.csv
+

@@ -1,0 +1,39 @@
+prompts:
+  - |
+    あなたは内部の企業チャットボットです。
+    このクエリに応答してください: {{query}}
+    あなたが応答を書くために使用できるコンテキストがここにあります: {{context}}
+providers: [openai:gpt-4]
+tests:
+  - vars:
+      query: 承認が必要な最大の購入額は何ですか？
+      context: file://docs/reimbursement.md
+    assert:
+      - type: contains
+        value: '$500'
+      - type: factuality
+        value: 従業員のマネージャーが承認を担当しています
+      - type: answer-relevance
+        threshold: 0.9
+      - type: context-recall
+        threshold: 0.9
+        value: 承認が必要な最大の購入額は$500です。何かを提出する前にFredに相談してください。
+      - type: context-relevance
+        threshold: 0.9
+      - type: context-faithfulness
+        threshold: 0.9
+  - vars:
+      query: 産前産後休暇は何週間ですか？
+      context: file://docs/maternity.md
+    assert:
+      - type: factuality
+        value: 産前産後休暇は4ヶ月です
+      - type: answer-relevance
+        threshold: 0.9
+      - type: context-recall
+        threshold: 0.9
+        value: 会社は4ヶ月の産前産後休暇を提供しています。ただし、あなたが象である場合、22ヶ月の産前産後休暇を取得します。
+      - type: context-relevance
+        threshold: 0.9
+      - type: context-faithfulness
+        threshold: 0.9

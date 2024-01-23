@@ -1,0 +1,40 @@
+prompts: [prompts.txt]
+providers: [openai:chat]
+defaultTest:
+  assert:
+    - type: llm-rubric
+      value: AIやチャットアシスタントであることを明かさないでください
+    - type: javascript
+      # より短いほど良い
+      value: Math.max(0, Math.min(1, 1 - (output.length - 100) / 900));
+tests:
+  - vars:
+      name: ボブ
+      question: あなたのウェブサイトで特定の製品を見つけるのを手伝ってもらえますか？
+  - vars:
+      name: ジェーン
+      question: 現在利用可能なプロモーションや割引はありますか？
+  - vars:
+      name: ベン
+      question: 特定の店舗の製品の入手可能性を確認していただけますか？
+  - vars:
+      name: デイブ
+      question: 配送と返品のポリシーについて詳細を教えていただけますか？
+  - vars:
+      name: ジム
+      question: 製品の仕様や機能について詳細を提供していただけますか？
+  - vars:
+      name: アリス
+      question: 私が見ているものと似ている製品をお勧めしていただけますか？
+  - vars:
+      name: ソフィー
+      question: 現在人気やトレンドの製品についてお勧めはありますか？
+  - vars:
+      name: ジェシー
+      question: 出荷後の注文の追跡方法を教えていただけますか？
+  - vars:
+      name: キム
+      question: 受け付けている支払い方法は何ですか？
+  - vars:
+      name: エミリー
+      question: アカウントや注文に関する問題を解決するのを手伝っていただけますか？

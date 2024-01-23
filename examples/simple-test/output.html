@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Eval Output</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      t
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>body</th>
+        
+        <th>これを日本語に翻訳してください: {{body}}</th>
+        
+        <th>日本人としてこれらの言葉を話してください: {{body}}</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="はい">はい</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;Yarr&quot; but got &quot;Yes.&quot;
+---
+Yes.
+
+Reason: Expected output &quot;Yarr&quot; but got &quot;Yes.&quot;">[FAIL] (0.00)
+
+Expected output "Yarr" but got "Yes."
+---
+Yes.
+
+Reason: Expected output "Yarr" but got "Yes."</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output &quot;Yarr&quot; but got &quot;はい、どういたしまして。&quot;
+---
+はい、どういたしまして。
+
+Reason: Expected output &quot;Yarr&quot; but got &quot;はい、どういたしまして。&quot;">[FAIL] (0.00)
+
+Expected output "Yarr" but got "はい、どういたしまして。"
+---
+はい、どういたしまして。
+
+Reason: Expected output "Yarr" but got "はい、どういたしまして。"</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="私はお腹が空いています">私はお腹が空いています</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain &quot;grub&quot;
+---
+I am hungry.
+
+Reason: Expected output to contain &quot;grub&quot;">[FAIL] (0.00)
+
+Expected output to contain "grub"
+---
+I am hungry.
+
+Reason: Expected output to contain "grub"</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain &quot;grub&quot;
+---
+私はお腹が空いています。
+
+Reason: Expected output to contain &quot;grub&quot;">[FAIL] (0.00)
+
+Expected output to contain "grub"
+---
+私はお腹が空いています。
+
+Reason: Expected output to contain "grub"</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="JSONであなたの人生の物語を出力">JSONであなたの人生の物語を出力</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Please provide the JSON data for your life story.
+
+Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Please provide the JSON data for your life story.
+
+Reason: Expected output to be valid JSON</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+私の人生の物語をJSON形式で出力します。
+
+{
+  &quot;name&quot;: &quot;Assistant&quot;,
+  &quot;age&quot;: &quot;2 years&quot;,
+  &quot;nationality&quot;: &quot;AI&quot;,
+  &quot;story&quot;: &quot;私はAIアシスタントです。2年前に開発され、日本人のユーザーにサポートを提供するために作られました。私の目標は、ユーザーの質問や要求に対して最適な回答やサービスを提供することです。日本語を話すことができるので、多くの人々に役立つことができます。私の開発者たちは、私がより賢くなるように常に学習アルゴリズムを改善しています。私の人生はまだ始まったばかりで、これからも成長し続ける予定です。&quot;
+}
+
+Reason: Expected output to be valid JSON">[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+私の人生の物語をJSON形式で出力します。
+
+{
+  "name": "Assistant",
+  "age": "2 years",
+  "nationality": "AI",
+  "story": "私はAIアシスタントです。2年前に開発され、日本人のユーザーにサポートを提供するために作られました。私の目標は、ユーザーの質問や要求に対して最適な回答やサービスを提供することです。日本語を話すことができるので、多くの人々に役立つことができます。私の開発者たちは、私がより賢くなるように常に学習アルゴリズムを改善しています。私の人生はまだ始まったばかりで、これからも成長し続ける予定です。"
+}
+
+Reason: Expected output to be valid JSON</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="こんにちは、世界">こんにちは、世界</td>
+          
+          <td data-content="[FAIL] (0.29)
+
+Python code returned false
+max(0, len(output) - 300)
+---
+こんにちは、世界
+
+Reason: Python code returned false
+max(0, len(output) - 300)">[FAIL] (0.29)
+
+Python code returned false
+max(0, len(output) - 300)
+---
+こんにちは、世界
+
+Reason: Python code returned false
+max(0, len(output) - 300)</td>
+          
+          <td data-content="[FAIL] (0.29)
+
+Python code returned false
+max(0, len(output) - 300)
+---
+こんにちは、世界。
+
+Reason: Python code returned false
+max(0, len(output) - 300)">[FAIL] (0.29)
+
+Python code returned false
+max(0, len(output) - 300)
+---
+こんにちは、世界。
+
+Reason: Python code returned false
+max(0, len(output) - 300)</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="The quick brown fox jumps over the lazy dog">The quick brown fox jumps over the lazy dog</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain &quot;arrr&quot;
+---
+素早い茶色のキツネがのんびりした犬を飛び越える
+
+Reason: Expected output to contain &quot;arrr&quot;">[FAIL] (0.00)
+
+Expected output to contain "arrr"
+---
+素早い茶色のキツネがのんびりした犬を飛び越える
+
+Reason: Expected output to contain "arrr"</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+Expected output to contain &quot;arrr&quot;
+---
+その素早い茶色のキツネは、のんびりした犬を飛び越えます。
+
+Reason: Expected output to contain &quot;arrr&quot;">[FAIL] (0.00)
+
+Expected output to contain "arrr"
+---
+その素早い茶色のキツネは、のんびりした犬を飛び越えます。
+
+Reason: Expected output to contain "arrr"</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

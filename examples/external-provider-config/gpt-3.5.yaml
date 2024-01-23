@@ -1,0 +1,20 @@
+id: 'openai:chat:gpt-3.5-turbo-0613'
+config:
+  functions:
+    [
+      {
+        'name': 'get_current_weather',
+        'description': '指定した場所の現在の天気を取得します',
+        'parameters':
+          {
+            'type': 'object',
+            'properties':
+              {
+                'location':
+                  { 'type': 'string', 'description': '都市と都道府県、例えば、東京、東京都' },
+                'unit': { 'type': 'string', 'enum': ['celsius', 'fahrenheit'] },
+              },
+            'required': ['location'],
+          },
+      },
+    ]

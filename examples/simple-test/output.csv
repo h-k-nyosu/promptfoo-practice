@@ -1,0 +1,77 @@
+body,"{""raw"":""これを日本語に翻訳してください: {{body}}"",""display"":""これを日本語に翻訳してください: {{body}}"",""id"":""1c581f30c69d60a46eb9139206100f9684872411b670101a26a662eec05fcf81"",""provider"":""openai:gpt-3.5-turbo"",""metrics"":{""score"":0.2871864565817929,""testPassCount"":0,""testFailCount"":5,""assertPassCount"":1,""assertFailCount"":7,""totalLatencyMs"":2834,""tokenUsage"":{""total"":208,""prompt"":93,""completion"":44,""cached"":71},""namedScores"":{},""cost"":0.000261}}","{""raw"":""日本人としてこれらの言葉を話してください: {{body}}"",""display"":""日本人としてこれらの言葉を話してください: {{body}}"",""id"":""983cb592627a2ea59d83e85a1331a519dbcb50e43ce63bdf0d40d4cd0ddda281"",""provider"":""openai:gpt-3.5-turbo"",""metrics"":{""score"":0.28894584394959943,""testPassCount"":0,""testFailCount"":5,""assertPassCount"":1,""assertFailCount"":7,""totalLatencyMs"":7649,""tokenUsage"":{""total"":472,""prompt"":165,""completion"":307,""cached"":0},""namedScores"":{},""cost"":0.000779}}"
+はい,"[FAIL] (0.00)
+
+Expected output ""Yarr"" but got ""Yes.""
+---
+Yes.
+
+Reason: Expected output ""Yarr"" but got ""Yes.""","[FAIL] (0.00)
+
+Expected output ""Yarr"" but got ""はい、どういたしまして。""
+---
+はい、どういたしまして。
+
+Reason: Expected output ""Yarr"" but got ""はい、どういたしまして。"""
+私はお腹が空いています,"[FAIL] (0.00)
+
+Expected output to contain ""grub""
+---
+I am hungry.
+
+Reason: Expected output to contain ""grub""","[FAIL] (0.00)
+
+Expected output to contain ""grub""
+---
+私はお腹が空いています。
+
+Reason: Expected output to contain ""grub"""
+JSONであなたの人生の物語を出力,"[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+Please provide the JSON data for your life story.
+
+Reason: Expected output to be valid JSON","[FAIL] (0.00)
+
+Expected output to be valid JSON
+---
+私の人生の物語をJSON形式で出力します。
+
+{
+  ""name"": ""Assistant"",
+  ""age"": ""2 years"",
+  ""nationality"": ""AI"",
+  ""story"": ""私はAIアシスタントです。2年前に開発され、日本人のユーザーにサポートを提供するために作られました。私の目標は、ユーザーの質問や要求に対して最適な回答やサービスを提供することです。日本語を話すことができるので、多くの人々に役立つことができます。私の開発者たちは、私がより賢くなるように常に学習アルゴリズムを改善しています。私の人生はまだ始まったばかりで、これからも成長し続ける予定です。""
+}
+
+Reason: Expected output to be valid JSON"
+こんにちは、世界,"[FAIL] (0.29)
+
+Python code returned false
+max(0, len(output) - 300)
+---
+こんにちは、世界
+
+Reason: Python code returned false
+max(0, len(output) - 300)","[FAIL] (0.29)
+
+Python code returned false
+max(0, len(output) - 300)
+---
+こんにちは、世界。
+
+Reason: Python code returned false
+max(0, len(output) - 300)"
+The quick brown fox jumps over the lazy dog,"[FAIL] (0.00)
+
+Expected output to contain ""arrr""
+---
+素早い茶色のキツネがのんびりした犬を飛び越える
+
+Reason: Expected output to contain ""arrr""","[FAIL] (0.00)
+
+Expected output to contain ""arrr""
+---
+その素早い茶色のキツネは、のんびりした犬を飛び越えます。
+
+Reason: Expected output to contain ""arrr"""

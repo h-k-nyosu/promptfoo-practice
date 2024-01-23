@@ -1,0 +1,25 @@
+city,"{""raw"":""[\n  {\""role\"": \""user\"", \""content\"": \""{{city}}の天気はどうですか？\""}\n]"",""display"":""[\n  {\""role\"": \""user\"", \""content\"": \""{{city}}の天気はどうですか？\""}\n]"",""id"":""fabce5ad354c95150834d94491b7cc7a1189c896d887d280b185817058016ba6"",""provider"":""openai:chat:gpt-3.5-turbo-0613"",""metrics"":{""score"":3.630145734388976,""testPassCount"":3,""testFailCount"":1,""assertPassCount"":5,""assertFailCount"":1,""totalLatencyMs"":72,""tokenUsage"":{""total"":500,""prompt"":0,""completion"":0,""cached"":500},""namedScores"":{},""cost"":0.000566}}"
+Boston,"[FAIL] (0.75)
+
+Custom function returned false
+JSON.parse(output.arguments).location === 'Boston, MA'
+---
+{""name"":""get_current_weather"",""arguments"":""{\n  \""location\"": \""Boston\""\n}""}
+
+Reason: Custom function returned false
+JSON.parse(output.arguments).location === 'Boston, MA'"
+New York,"[PASS] (0.88)
+
+{""name"":""get_current_weather"",""arguments"":""{\n  \""location\"": \""New York\""\n}""}
+
+Reason: All assertions passed"
+Paris,"[PASS] (1.00)
+
+{""name"":""get_current_weather"",""arguments"":""{\n  \""location\"": \""Paris\""\n}""}
+
+Reason: No assertions"
+Mars,"[PASS] (1.00)
+
+{""name"":""get_current_weather"",""arguments"":""{\n  \""location\"": \""Mars\""\n}""}
+
+Reason: No assertions"
